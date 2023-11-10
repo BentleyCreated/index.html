@@ -72,7 +72,7 @@
             <li><strong>Authenticity:</strong> Authenticates that the data comes from a verified source.</li>
         </ul>
     </section>
-    <section id="types">
+       <section id="types">
         <h2>Types of Basic Encryption</h2>
         <article>
             <h3>Symmetric Encryption</h3>
@@ -81,10 +81,62 @@
             <h3>Hash Functions</h3>
             <p>Converts data into a fixed size hash value, which cannot be reversed, ideal for password storage.</p>
         </article>
-    </section>
-    <footer>
+    </section> 
+</body>
+<body>
+    <article>
+        <section>
+            <h2>AES128</h2>
+            <h3>Pros</h3>
+            <ul>
+                <li>Fast encryption and decryption.</li>
+                <li>Requires less computational power.</li>
+                <li>Adequate for most conventional purposes.</li>
+            </ul>
+            <h3>Cons</h3>
+            <ul>
+                <li>Lower security margin compared to AES256.</li>
+                <li>Potentially vulnerable to future advances in quantum computing.</li>
+            </ul>
+            <h3>When to Use</h3>
+            <p>Use AES128 when you require fast and efficient encryption for applications like streaming video content where performance is crucial.</p>
+        </section>
+        
+        <section>
+            <h2>AES192</h2>
+            <h3>Pros</h3>
+            <ul>
+                <li>More secure than AES128 due to a longer key length.</li>
+                <li>Still relatively efficient in terms of computational resources.</li>
+            </ul>
+            <h3>Cons</h3>
+            <ul>
+                <li>Slower than AES128 due to a longer key.</li>
+                <li>Not as widely adopted or supported as AES128 or AES256.</li>
+            </ul>
+            <h3>When to Use</h3>
+            <p>AES192 might be used when there is a need for a balance between stronger security and computational efficiency, though it's less common than AES128 and AES256.</p>
+        </section>
+        
+        <section>
+            <h2>AES256</h2>
+            <h3>Pros</h3>
+            <ul>
+                <li>Highest security margin among the AES variants.</li>
+                <li>Theoretically resistant to all known practical attacks, including brute force.</li>
+            </ul>
+            <h3>Cons</h3>
+            <ul>
+                <li>Slower than AES128 due to the complexity of the key.</li>
+                <li>Requires more computational resources, which can be a drawback in resource-constrained environments.</li>
+            </ul>
+            <h3>When to Use</h3>
+            <p>AES256 is best suited for scenarios that require the highest level of security, such as securing sensitive government or financial data, where encryption/decryption speed is not the primary concern.</p>
+        </section>
+    </article>
+</body>
+<footer>
         <p>&copy; 2023 Rusty Cryptor</p>
     </footer>
-</body>
 </html>
 
