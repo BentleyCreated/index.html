@@ -60,8 +60,18 @@
 <body>
    <header>
         <h1>CorrodedCipher</h1>
-        <p class="team-members">By William, Yogish, Athan, Kevin, Oskar</p>
+        <p class="team-members">By William, Yogesh, Athan, Kevin, Oskar</p>
         <p>The Gold Standard in Data Protection</p>
+
+        <button onclick="gotoLink(this)" value="./howto.html">How to Input</button>
+
+        <script>
+            function gotoLink(link){
+                console.log(link.value);
+                location.href = link.value;
+            }
+        </script>
+
     </header>
     <section id="benefits">
         <h2>The Benefits of Encryption</h2>
@@ -139,11 +149,6 @@
             <p>Hashing is a process of converting an input (or 'message') into a fixed-size string of bytes. The output, known as the hash value, typically represents the input in a compressed form. Hashing is a one-way process, meaning that it's nearly impossible to invert or "decrypt" a hash back to its original input. This makes it ideal for storing sensitive information like passwords, where you can compare the hashed version without needing to know the actual password.</p>
         </section>
 
-        <section id="Inputting Files">
-            <h2>Different Options for Inputting Files</h2>
-            <p>For inputting files into CorrodedCipher there are two options. First, you can drag and drop the file you want to input into the GUI. Second, you can select the file you want from the search files button. Either option works.</p>
-        </section>
-
 
     </article>
 </body>
@@ -151,4 +156,3 @@
         <p>&copy; 2023 Rusty Cryptor</p>
     </footer>
 </html>
-
